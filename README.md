@@ -1,1 +1,3 @@
-# KarolSutkowski1TPKomunikacjaAplikacjiMDI
+# Komunikacja między oknami
+
+Takie zadanie jedno
