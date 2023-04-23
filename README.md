@@ -1,0 +1,1 @@
+# KarolSutkowski1TPKomunikacjaAplikacjiMDI
