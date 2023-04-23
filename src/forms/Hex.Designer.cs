@@ -1,4 +1,4 @@
-﻿namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI.src.forms
+﻿namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI.src
 {
     partial class Hex
     {

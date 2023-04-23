@@ -8,6 +8,8 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using KarolSutkowski1TPKomunikacjaAplikacjiMDI.src;
+using Omlcs.src;
 
 namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI
 {
@@ -16,6 +18,11 @@ namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.BackColor = Colores.HexColor("#0000ff");
         }
     }
 }
