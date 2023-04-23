@@ -12,6 +12,20 @@ namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI.src
 {
     public partial class Oct : Form
     {
+        private static Oct instance;
+
+        public static Oct Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new Oct();
+                }
+                return instance;
+            }
+        } 
+
         public Oct()
         {
             InitializeComponent();
