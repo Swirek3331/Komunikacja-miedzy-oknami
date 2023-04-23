@@ -39,11 +39,6 @@ namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI
             this.WindowState = FormWindowState.Maximized;
         }
 
-        private void closeShutdown_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void inputOpen_Click(object sender, EventArgs e)
         {
             Utilities.ShowWindow(Calculator.Instance, this, "Calculator");
@@ -51,7 +46,22 @@ namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI
 
         private void binaryOpen_Click(object sender, EventArgs e)
         {
+            Calculator.Instance.toBin_Click(sender, e);
+        }
 
+        private void octalOpen_Click(object sender, EventArgs e)
+        {
+            Calculator.Instance.toOct_Click(sender, e);
+        }
+
+        private void hexadecimalOpen_Click(object sender, EventArgs e)
+        {
+            Calculator.Instance.toHex_Click(sender, e);
+        }
+
+        private void closeShutdown_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

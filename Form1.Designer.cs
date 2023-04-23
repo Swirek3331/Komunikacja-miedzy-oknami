@@ -86,6 +86,7 @@
             this.octalOpen.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
             this.octalOpen.Size = new System.Drawing.Size(297, 26);
             this.octalOpen.Text = "Wynik oktalny";
+            this.octalOpen.Click += new System.EventHandler(this.octalOpen_Click);
             // 
             // hexadecimalOpen
             // 
@@ -93,6 +94,7 @@
             this.hexadecimalOpen.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.H)));
             this.hexadecimalOpen.Size = new System.Drawing.Size(297, 26);
             this.hexadecimalOpen.Text = "Wynik heksadecymalny";
+            this.hexadecimalOpen.Click += new System.EventHandler(this.hexadecimalOpen_Click);
             // 
             // toolStripMenuItem1
             // 
