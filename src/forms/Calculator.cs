@@ -36,6 +36,11 @@ namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI.src
         {
             Button button = (Button)sender;
             mainTextBox.Text += button.Text;
+            
+            /*
+             * Z nieznanych przczyn czasem jak się kliknie za szybko guziki
+             * Program dostaję szmerlga
+             */
         }
 
         private void TextBox_Clear(object sender, EventArgs e)
@@ -45,7 +50,10 @@ namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI.src
 
         private void Backspace(object sender, EventArgs e)
         {
-            mainTextBox.Text = mainTextBox.Text.Remove(mainTextBox.Text.Length - 1);
+            if (mainTextBox.Text.Length > 0)
+            {
+                mainTextBox.Text = mainTextBox.Text.Remove(mainTextBox.Text.Length - 1);
+            }
         }
     }
 }

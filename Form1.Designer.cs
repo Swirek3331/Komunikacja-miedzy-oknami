@@ -47,7 +47,7 @@
             this.openMenu});
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(800, 28);
+            this.menu.Size = new System.Drawing.Size(800, 30);
             this.menu.TabIndex = 0;
             this.menu.Text = "menuStrip1";
             // 
@@ -61,42 +61,48 @@
             this.toolStripMenuItem1,
             this.closeShutdown});
             this.openMenu.Name = "openMenu";
-            this.openMenu.Size = new System.Drawing.Size(71, 24);
+            this.openMenu.Size = new System.Drawing.Size(71, 26);
             this.openMenu.Text = "Otwórz";
             // 
             // inputOpen
             // 
             this.inputOpen.Name = "inputOpen";
-            this.inputOpen.Size = new System.Drawing.Size(244, 26);
+            this.inputOpen.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F1)));
+            this.inputOpen.Size = new System.Drawing.Size(297, 26);
             this.inputOpen.Text = "Wprowadź dane";
+            this.inputOpen.Click += new System.EventHandler(this.inputOpen_Click);
             // 
             // binaryOpen
             // 
             this.binaryOpen.Name = "binaryOpen";
-            this.binaryOpen.Size = new System.Drawing.Size(244, 26);
+            this.binaryOpen.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.B)));
+            this.binaryOpen.Size = new System.Drawing.Size(297, 26);
             this.binaryOpen.Text = "Wynik binarny";
             // 
             // octalOpen
             // 
             this.octalOpen.Name = "octalOpen";
-            this.octalOpen.Size = new System.Drawing.Size(244, 26);
+            this.octalOpen.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
+            this.octalOpen.Size = new System.Drawing.Size(297, 26);
             this.octalOpen.Text = "Wynik oktalny";
             // 
             // hexadecimalOpen
             // 
             this.hexadecimalOpen.Name = "hexadecimalOpen";
-            this.hexadecimalOpen.Size = new System.Drawing.Size(244, 26);
+            this.hexadecimalOpen.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.H)));
+            this.hexadecimalOpen.Size = new System.Drawing.Size(297, 26);
             this.hexadecimalOpen.Text = "Wynik heksadecymalny";
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(241, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(294, 6);
             // 
             // closeShutdown
             // 
             this.closeShutdown.Name = "closeShutdown";
-            this.closeShutdown.Size = new System.Drawing.Size(244, 26);
+            this.closeShutdown.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
+            this.closeShutdown.Size = new System.Drawing.Size(297, 26);
             this.closeShutdown.Text = "Zamknij";
             this.closeShutdown.Click += new System.EventHandler(this.closeShutdown_Click);
             // 
@@ -107,6 +113,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menu;
             this.Name = "Form1";
             this.Text = "Form1";

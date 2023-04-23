@@ -49,5 +49,22 @@ namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI.src
             form.Activate();
             form.Show();
         }
+
+        public static void Checker(TextBox textBox)
+        {
+            if (textBox.Text[0] == '0')
+            {
+            
+                for (int i = 0; i < textBox.Text.Length; i++)
+                {
+
+                    textBox.Text = textBox.Text.Remove(0, 1);
+                    if (textBox.Text[0] != '0')
+                    {
+                        break;
+                    }
+                }
+            }
+        }
     }
 }

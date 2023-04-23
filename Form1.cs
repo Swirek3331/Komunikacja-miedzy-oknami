@@ -22,12 +22,17 @@ namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.BackColor = Colores.HexColor("#0000ff");
+            this.Size = Screen.PrimaryScreen.WorkingArea.Size;
         }
 
         private void closeShutdown_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void inputOpen_Click(object sender, EventArgs e)
+        {
+            Utilities.ShowWindow(Calculator.Instance, this, "Calculator");
         }
     }
 }
