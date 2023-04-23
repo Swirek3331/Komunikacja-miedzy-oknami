@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Omlcs.src;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,22 @@ namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI.src
         public Calculator()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            mainTextBox.Text += button.Text;
+        }
+
+        private void TextBox_Clear(object sender, EventArgs e)
+        {
+            mainTextBox.Clear();
+        }
+
+        private void Backspace(object sender, EventArgs e)
+        {
+            mainTextBox.Text = mainTextBox.Text.Remove(mainTextBox.Text.Length - 1);
         }
     }
 }

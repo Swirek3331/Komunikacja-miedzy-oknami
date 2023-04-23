@@ -1,4 +1,6 @@
-﻿namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI.src
+﻿using Omlcs.src;
+
+namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI.src
 {
     partial class Calculator
     {
@@ -51,8 +53,10 @@
             this.mainTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.mainTextBox.Location = new System.Drawing.Point(13, 13);
             this.mainTextBox.Name = "mainTextBox";
+            this.mainTextBox.ReadOnly = true;
             this.mainTextBox.Size = new System.Drawing.Size(617, 75);
             this.mainTextBox.TabIndex = 0;
+            this.mainTextBox.BackColor = Colores.HexColor("00fa80");
             // 
             // seven
             // 
@@ -63,6 +67,7 @@
             this.seven.TabIndex = 1;
             this.seven.Text = "7";
             this.seven.UseVisualStyleBackColor = true;
+            this.seven.Click += new System.EventHandler(this.Button_Click);
             // 
             // eight
             // 
@@ -73,6 +78,7 @@
             this.eight.TabIndex = 2;
             this.eight.Text = "8";
             this.eight.UseVisualStyleBackColor = true;
+            this.eight.Click += new System.EventHandler(this.Button_Click);
             // 
             // nine
             // 
@@ -83,6 +89,7 @@
             this.nine.TabIndex = 3;
             this.nine.Text = "9";
             this.nine.UseVisualStyleBackColor = true;
+            this.nine.Click += new System.EventHandler(this.Button_Click);
             // 
             // four
             // 
@@ -93,6 +100,7 @@
             this.four.TabIndex = 4;
             this.four.Text = "4";
             this.four.UseVisualStyleBackColor = true;
+            this.four.Click += new System.EventHandler(this.Button_Click);
             // 
             // five
             // 
@@ -103,6 +111,7 @@
             this.five.TabIndex = 5;
             this.five.Text = "5";
             this.five.UseVisualStyleBackColor = true;
+            this.five.Click += new System.EventHandler(this.Button_Click);
             // 
             // six
             // 
@@ -113,6 +122,7 @@
             this.six.TabIndex = 6;
             this.six.Text = "6";
             this.six.UseVisualStyleBackColor = true;
+            this.six.Click += new System.EventHandler(this.Button_Click);
             // 
             // one
             // 
@@ -123,6 +133,7 @@
             this.one.TabIndex = 7;
             this.one.Text = "1";
             this.one.UseVisualStyleBackColor = true;
+            this.one.Click += new System.EventHandler(this.Button_Click);
             // 
             // two
             // 
@@ -133,6 +144,7 @@
             this.two.TabIndex = 8;
             this.two.Text = "2";
             this.two.UseVisualStyleBackColor = true;
+            this.two.Click += new System.EventHandler(this.Button_Click);
             // 
             // three
             // 
@@ -143,6 +155,7 @@
             this.three.TabIndex = 9;
             this.three.Text = "3";
             this.three.UseVisualStyleBackColor = true;
+            this.three.Click += new System.EventHandler(this.Button_Click);
             // 
             // clear
             // 
@@ -153,6 +166,7 @@
             this.clear.TabIndex = 10;
             this.clear.Text = "C";
             this.clear.UseVisualStyleBackColor = true;
+            this.clear.Click += new System.EventHandler(this.TextBox_Clear);
             // 
             // zero
             // 
@@ -163,6 +177,7 @@
             this.zero.TabIndex = 11;
             this.zero.Text = "0";
             this.zero.UseVisualStyleBackColor = true;
+            this.zero.Click += new System.EventHandler(this.Button_Click);
             // 
             // backspace
             // 
@@ -173,6 +188,7 @@
             this.backspace.TabIndex = 12;
             this.backspace.Text = "<";
             this.backspace.UseVisualStyleBackColor = true;
+            this.backspace.Click += new System.EventHandler(this.Backspace);
             // 
             // toBin
             // 
@@ -227,6 +243,7 @@
             this.Controls.Add(this.mainTextBox);
             this.Name = "Calculator";
             this.Text = "Calculator";
+            this.Click += new System.EventHandler(this.Button_Click);
             this.ResumeLayout(false);
             this.PerformLayout();
 
