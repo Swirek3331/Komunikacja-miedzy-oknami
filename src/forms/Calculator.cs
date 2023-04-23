@@ -13,6 +13,20 @@ namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI.src
 {
     public partial class Calculator : Form
     {
+        private static Calculator instance;
+
+        public static Calculator Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new Calculator();
+                }
+                return instance;
+            }
+        }
+
         public Calculator()
         {
             InitializeComponent();

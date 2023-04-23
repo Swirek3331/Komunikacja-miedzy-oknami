@@ -50,13 +50,13 @@ namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI.src
             // 
             // mainTextBox
             // 
+            this.mainTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(250)))), ((int)(((byte)(128)))));
             this.mainTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.mainTextBox.Location = new System.Drawing.Point(13, 13);
+            this.mainTextBox.Location = new System.Drawing.Point(13, 12);
             this.mainTextBox.Name = "mainTextBox";
             this.mainTextBox.ReadOnly = true;
             this.mainTextBox.Size = new System.Drawing.Size(617, 75);
             this.mainTextBox.TabIndex = 0;
-            this.mainTextBox.BackColor = Colores.HexColor("00fa80");
             // 
             // seven
             // 

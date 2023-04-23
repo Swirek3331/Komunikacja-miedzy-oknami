@@ -24,5 +24,10 @@ namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI
         {
             this.BackColor = Colores.HexColor("#0000ff");
         }
+
+        private void closeShutdown_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

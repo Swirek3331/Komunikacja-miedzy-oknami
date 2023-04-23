@@ -28,21 +28,104 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.menu = new System.Windows.Forms.MenuStrip();
+            this.openMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.inputOpen = new System.Windows.Forms.ToolStripMenuItem();
+            this.binaryOpen = new System.Windows.Forms.ToolStripMenuItem();
+            this.octalOpen = new System.Windows.Forms.ToolStripMenuItem();
+            this.hexadecimalOpen = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
+            this.closeShutdown = new System.Windows.Forms.ToolStripMenuItem();
+            this.menu.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // menu
+            // 
+            this.menu.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.openMenu});
+            this.menu.Location = new System.Drawing.Point(0, 0);
+            this.menu.Name = "menu";
+            this.menu.Size = new System.Drawing.Size(800, 28);
+            this.menu.TabIndex = 0;
+            this.menu.Text = "menuStrip1";
+            // 
+            // openMenu
+            // 
+            this.openMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inputOpen,
+            this.binaryOpen,
+            this.octalOpen,
+            this.hexadecimalOpen,
+            this.toolStripMenuItem1,
+            this.closeShutdown});
+            this.openMenu.Name = "openMenu";
+            this.openMenu.Size = new System.Drawing.Size(71, 24);
+            this.openMenu.Text = "Otwórz";
+            // 
+            // inputOpen
+            // 
+            this.inputOpen.Name = "inputOpen";
+            this.inputOpen.Size = new System.Drawing.Size(244, 26);
+            this.inputOpen.Text = "Wprowadź dane";
+            // 
+            // binaryOpen
+            // 
+            this.binaryOpen.Name = "binaryOpen";
+            this.binaryOpen.Size = new System.Drawing.Size(244, 26);
+            this.binaryOpen.Text = "Wynik binarny";
+            // 
+            // octalOpen
+            // 
+            this.octalOpen.Name = "octalOpen";
+            this.octalOpen.Size = new System.Drawing.Size(244, 26);
+            this.octalOpen.Text = "Wynik oktalny";
+            // 
+            // hexadecimalOpen
+            // 
+            this.hexadecimalOpen.Name = "hexadecimalOpen";
+            this.hexadecimalOpen.Size = new System.Drawing.Size(244, 26);
+            this.hexadecimalOpen.Text = "Wynik heksadecymalny";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(241, 6);
+            // 
+            // closeShutdown
+            // 
+            this.closeShutdown.Name = "closeShutdown";
+            this.closeShutdown.Size = new System.Drawing.Size(244, 26);
+            this.closeShutdown.Text = "Zamknij";
+            this.closeShutdown.Click += new System.EventHandler(this.closeShutdown_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.menu);
+            this.MainMenuStrip = this.menu;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.menu.ResumeLayout(false);
+            this.menu.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.MenuStrip menu;
+        private System.Windows.Forms.ToolStripMenuItem openMenu;
+        private System.Windows.Forms.ToolStripMenuItem inputOpen;
+        private System.Windows.Forms.ToolStripMenuItem binaryOpen;
+        private System.Windows.Forms.ToolStripMenuItem octalOpen;
+        private System.Windows.Forms.ToolStripMenuItem hexadecimalOpen;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem closeShutdown;
     }
 }
 
