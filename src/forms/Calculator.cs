@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI.src
+namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI
 {
     public partial class Calculator : Form
     {
@@ -54,6 +54,11 @@ namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI.src
             {
                 mainTextBox.Text = mainTextBox.Text.Remove(mainTextBox.Text.Length - 1);
             }
+        }
+
+        private void toBin_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

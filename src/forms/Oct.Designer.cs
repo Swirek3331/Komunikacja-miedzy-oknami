@@ -1,4 +1,4 @@
-﻿namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI.src
+﻿namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI
 {
     partial class Oct
     {

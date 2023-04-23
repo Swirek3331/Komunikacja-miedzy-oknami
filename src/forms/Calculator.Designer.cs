@@ -1,6 +1,6 @@
 ﻿using Omlcs.src;
 
-namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI.src
+namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI
 {
     partial class Calculator
     {
@@ -199,6 +199,7 @@ namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI.src
             this.toBin.TabIndex = 13;
             this.toBin.Text = "BIN";
             this.toBin.UseVisualStyleBackColor = true;
+            this.toBin.Click += new System.EventHandler(this.toBin_Click);
             // 
             // toOct
             // 

@@ -6,7 +6,6 @@ using System.Drawing;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using KarolSutkowski1TPKomunikacjaAplikacjiMDI.src;
 using Omlcs.src;
@@ -15,6 +14,17 @@ namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI
 {
     public partial class Form1 : Form
     {
+        private static Form1 Instance;
+
+        public static Form1 GetInstance()
+        {
+            if (Instance == null)
+            {
+                Instance = new Form1();
+            }
+            return Instance;
+        }
+
         public Form1()
         {
             InitializeComponent();
@@ -24,12 +34,7 @@ namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI
         {
             this.WindowState = FormWindowState.Maximized;
         }
-
-        private void closeShutdown_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
+        
         private void inputOpen_Click(object sender, EventArgs e)
         {
             Utilities.ShowWindow(Calculator.Instance, this, "Calculator");
@@ -48,6 +53,11 @@ namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI
         private void hexadecimalOpen_Click(object sender, EventArgs e)
         {
             Utilities.ShowWindow(Hex.Instance, this, "Hexadecimal");
+        }
+
+        private void closeShutdown_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
