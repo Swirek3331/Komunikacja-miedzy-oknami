@@ -1,4 +1,4 @@
-﻿namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI
+﻿namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI.src
 {
     partial class Bin
     {

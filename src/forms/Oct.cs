@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI
+namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI.src
 {
     public partial class Oct : Form
     {

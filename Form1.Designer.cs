@@ -47,7 +47,7 @@
             this.openMenu});
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(800, 30);
+            this.menu.Size = new System.Drawing.Size(800, 28);
             this.menu.TabIndex = 0;
             this.menu.Text = "menuStrip1";
             // 
@@ -61,7 +61,7 @@
             this.toolStripMenuItem1,
             this.closeShutdown});
             this.openMenu.Name = "openMenu";
-            this.openMenu.Size = new System.Drawing.Size(71, 26);
+            this.openMenu.Size = new System.Drawing.Size(71, 24);
             this.openMenu.Text = "Otwórz";
             // 
             // inputOpen
@@ -113,7 +113,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -121,7 +120,6 @@
             this.MainMenuStrip = this.menu;
             this.Name = "Form1";
             this.Text = "Form1";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menu.ResumeLayout(false);
             this.menu.PerformLayout();
