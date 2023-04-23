@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,8 +30,23 @@ namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI.src
             return result;
         }
 
-        public static void ShowWindow(Form form)
+        public static void ShowWindow(Form form, Form container, string tag)
         {
+            form.Tag = tag;
+            form.MdiParent = container;
+            form.Icon = container.Icon;
+
+            form.Activate();
+            form.Show();
+        }
+
+        public static void ShowWindow(Form form, Form container, string tag, Icon icon)
+        {
+            form.Tag = tag;
+            form.MdiParent = container;
+            form.Icon = icon;
+
+            form.Activate();
             form.Show();
         }
     }
