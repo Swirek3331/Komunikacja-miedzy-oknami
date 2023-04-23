@@ -22,7 +22,7 @@ namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.Size = Screen.PrimaryScreen.WorkingArea.Size;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void closeShutdown_Click(object sender, EventArgs e)
@@ -33,6 +33,21 @@ namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI
         private void inputOpen_Click(object sender, EventArgs e)
         {
             Utilities.ShowWindow(Calculator.Instance, this, "Calculator");
+        }
+
+        private void binaryOpen_Click(object sender, EventArgs e)
+        {
+            Utilities.ShowWindow(Bin.Instance, this, "Binary");
+        }
+
+        private void octalOpen_Click(object sender, EventArgs e)
+        {
+            Utilities.ShowWindow(Oct.Instance, this, "Octal");
+        }
+
+        private void hexadecimalOpen_Click(object sender, EventArgs e)
+        {
+            Utilities.ShowWindow(Hex.Instance, this, "Hexadecimal");
         }
     }
 }

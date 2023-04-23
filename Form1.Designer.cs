@@ -47,7 +47,7 @@
             this.openMenu});
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(800, 30);
+            this.menu.Size = new System.Drawing.Size(800, 28);
             this.menu.TabIndex = 0;
             this.menu.Text = "menuStrip1";
             // 
@@ -61,7 +61,7 @@
             this.toolStripMenuItem1,
             this.closeShutdown});
             this.openMenu.Name = "openMenu";
-            this.openMenu.Size = new System.Drawing.Size(71, 26);
+            this.openMenu.Size = new System.Drawing.Size(71, 24);
             this.openMenu.Text = "Otwórz";
             // 
             // inputOpen
@@ -78,6 +78,7 @@
             this.binaryOpen.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.B)));
             this.binaryOpen.Size = new System.Drawing.Size(297, 26);
             this.binaryOpen.Text = "Wynik binarny";
+            this.binaryOpen.Click += new System.EventHandler(this.binaryOpen_Click);
             // 
             // octalOpen
             // 
@@ -85,6 +86,7 @@
             this.octalOpen.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
             this.octalOpen.Size = new System.Drawing.Size(297, 26);
             this.octalOpen.Text = "Wynik oktalny";
+            this.octalOpen.Click += new System.EventHandler(this.octalOpen_Click);
             // 
             // hexadecimalOpen
             // 
@@ -92,6 +94,7 @@
             this.hexadecimalOpen.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.H)));
             this.hexadecimalOpen.Size = new System.Drawing.Size(297, 26);
             this.hexadecimalOpen.Text = "Wynik heksadecymalny";
+            this.hexadecimalOpen.Click += new System.EventHandler(this.hexadecimalOpen_Click);
             // 
             // toolStripMenuItem1
             // 

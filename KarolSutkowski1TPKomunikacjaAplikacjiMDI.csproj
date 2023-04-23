@@ -94,8 +94,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="src\forms\Bin.resx">
+      <DependentUpon>Bin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="src\forms\Calculator.resx">
       <DependentUpon>Calculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\forms\Hex.resx">
+      <DependentUpon>Hex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\forms\Oct.resx">
+      <DependentUpon>Oct.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

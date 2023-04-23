@@ -50,15 +50,16 @@
             this.shutdownButton.TabIndex = 1;
             this.shutdownButton.Text = "Zamknij";
             this.shutdownButton.UseVisualStyleBackColor = true;
+            this.shutdownButton.Click += new System.EventHandler(this.shutdownButton_Click);
             // 
-            // Bin
+            // Hex
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(211, 123);
             this.Controls.Add(this.shutdownButton);
             this.Controls.Add(this.resultLabel);
-            this.Name = "Bin";
+            this.Name = "Hex";
             this.Text = "Bin";
             this.ResumeLayout(false);
             this.PerformLayout();

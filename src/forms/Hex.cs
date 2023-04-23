@@ -30,5 +30,10 @@ namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI.src
         {
             InitializeComponent();
         }
+
+        private void shutdownButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
