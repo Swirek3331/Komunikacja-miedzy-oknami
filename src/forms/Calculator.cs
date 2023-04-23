@@ -15,6 +15,7 @@ namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI
     {
         private static Calculator instance;
 
+
         public static Calculator Instance
         {
             get
