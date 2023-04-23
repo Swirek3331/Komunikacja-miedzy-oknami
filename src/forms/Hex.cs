@@ -14,6 +14,8 @@ namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI.src
     {
         private static Hex instance;
 
+        public Label _resultLabel => resultLabel;
+
         public static Hex Instance
         {
             get

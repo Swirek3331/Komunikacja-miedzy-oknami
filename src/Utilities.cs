@@ -12,22 +12,7 @@ namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI.src
     {
         public static string FromBaseTenToAny(int number, byte baseNumber)
         {
-            string result = "";
-            while (number > 0)
-            {
-                result += FromBaseTenToAny(number / baseNumber, baseNumber);
-
-                if (number % baseNumber > 9)
-                {
-                    result += (number % baseNumber).ToString("X");
-                }
-                else
-                {
-                    result += (number % baseNumber).ToString();
-                }
-            }
-
-            return result;
+            return Convert.ToString(number, baseNumber);
         }
 
         public static void ShowWindow(Form form, Form container, string tag)

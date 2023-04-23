@@ -13,7 +13,9 @@ namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI.src
     public partial class Bin : Form
     {
         private static Bin instance;
-        
+
+        public Label _resultLabel => resultLabel;
+
         public static Bin Instance
         {
             get

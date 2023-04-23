@@ -199,6 +199,7 @@ namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI.src
             this.toBin.TabIndex = 13;
             this.toBin.Text = "BIN";
             this.toBin.UseVisualStyleBackColor = true;
+            this.toBin.Click += new System.EventHandler(this.toBin_Click);
             // 
             // toOct
             // 
@@ -209,6 +210,7 @@ namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI.src
             this.toOct.TabIndex = 14;
             this.toOct.Text = "OCT";
             this.toOct.UseVisualStyleBackColor = true;
+            this.toOct.Click += new System.EventHandler(this.toOct_Click);
             // 
             // toHex
             // 
@@ -219,6 +221,7 @@ namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI.src
             this.toHex.TabIndex = 15;
             this.toHex.Text = "HEX";
             this.toHex.UseVisualStyleBackColor = true;
+            this.toHex.Click += new System.EventHandler(this.toHex_Click);
             // 
             // Calculator
             // 

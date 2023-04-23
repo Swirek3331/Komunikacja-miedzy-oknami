@@ -56,5 +56,50 @@ namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI.src
                 mainTextBox.Text = mainTextBox.Text.Remove(mainTextBox.Text.Length - 1);
             }
         }
+
+        public void toBin_Click(object sender, EventArgs e)
+        {
+            if (mainTextBox.Text.Length > 0)
+            {
+                Utilities.Checker(mainTextBox);
+                Bin.Instance._resultLabel.Text = Utilities.FromBaseTenToAny(Convert.ToInt32(mainTextBox.Text), 2);
+                if (!Bin.Instance.Visible)
+                {
+                    Bin.Instance.Activate();
+                    Bin.Instance.Show();
+                    Bin.Instance.Icon = Form1.Instance.Icon;
+                }
+            }
+        }
+
+        public void toOct_Click(object sender, EventArgs e)
+        {
+            if (mainTextBox.Text.Length > 0)
+            {
+                Utilities.Checker(mainTextBox);
+                Oct.Instance._resultLabel.Text = Utilities.FromBaseTenToAny(Convert.ToInt32(mainTextBox.Text), 8);
+                if (!Oct.Instance.Visible)
+                {
+                    Oct.Instance.Activate();
+                    Oct.Instance.Show();
+                    Oct.Instance.Icon = Form1.Instance.Icon;
+                }
+            }
+        }
+
+        public void toHex_Click(object sender, EventArgs e)
+        {
+            if (mainTextBox.Text.Length > 0)
+            {
+                Utilities.Checker(mainTextBox);
+                Hex.Instance._resultLabel.Text = Utilities.FromBaseTenToAny(Convert.ToInt32(mainTextBox.Text), 16);
+                if (!Hex.Instance.Visible)
+                {
+                    Hex.Instance.Activate();
+                    Hex.Instance.Show();
+                    Hex.Instance.Icon = Form1.Instance.Icon;
+                }
+            }
+        }
     }
 }

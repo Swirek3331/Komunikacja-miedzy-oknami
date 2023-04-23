@@ -14,6 +14,8 @@ namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI.src
     {
         private static Oct instance;
 
+        public Label _resultLabel => resultLabel;
+
         public static Oct Instance
         {
             get

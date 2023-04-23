@@ -15,6 +15,20 @@ namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI
 {
     public partial class Form1 : Form
     {
+        private static Form1 instance;
+
+        public static Form1 Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new Form1();
+                }
+                return instance;
+            }
+        }
+
         public Form1()
         {
             InitializeComponent();
@@ -37,17 +51,7 @@ namespace KarolSutkowski1TPKomunikacjaAplikacjiMDI
 
         private void binaryOpen_Click(object sender, EventArgs e)
         {
-            Utilities.ShowWindow(Bin.Instance, this, "Binary");
-        }
 
-        private void octalOpen_Click(object sender, EventArgs e)
-        {
-            Utilities.ShowWindow(Oct.Instance, this, "Octal");
-        }
-
-        private void hexadecimalOpen_Click(object sender, EventArgs e)
-        {
-            Utilities.ShowWindow(Hex.Instance, this, "Hexadecimal");
         }
     }
 }
