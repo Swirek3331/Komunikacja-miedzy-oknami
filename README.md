@@ -8,4 +8,4 @@ Używa [**omlcs**](https://github.com/Swirek3331/Omlcs)
 
 > Nie można ponownie otworzyć okna dziecka po jego pierwszym zamknięciu. Nie jest podpięta obsługa opcji menu. Reszta ok
 
-Ocena: $+ (85%)
+Ocena: 4+ (85%)
